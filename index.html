@@ -6,7 +6,7 @@
     <title>SSCR Library</title>
     <meta name="description" content="SSCR Library Login System" />
     <meta name="author" content="Lovable" />
-    <link rel="icon" href="/lovable-uploads/d283fc0e-6157-4373-9228-6e20b93c88a5.png" type="image/png" />
+    <link rel="icon" href="/SSCR-LIBRARY/lovable-uploads/d283fc0e-6157-4373-9228-6e20b93c88a5.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -26,5 +26,17 @@
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
   </body>
 </html>
